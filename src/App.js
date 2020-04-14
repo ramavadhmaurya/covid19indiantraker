@@ -1,33 +1,33 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
-} from 'react-router-dom';
-import * as Icon from 'react-feather';
+} from "react-router-dom";
+import * as Icon from "react-feather";
 
-import './App.scss';
+import "./App.scss";
 
-import Home from './components/home';
-import Navbar from './components/navbar';
-import Links from './components/links';
-import FAQ from './components/faq';
-import Banner from './components/banner';
+import Home from "./components/home";
+import Navbar from "./components/navbar";
+import Links from "./components/links";
+import FAQ from "./components/faq";
+import Banner from "./components/banner";
 // import PatientDB from './components/patientdb';
-import DeepDive from './components/deepdive';
-import GovtAdvisory from './components/govtAdvisory';
+import DeepDive from "./components/deepdive";
+import GovtAdvisory from "./components/govtAdvisory";
 // import Resources from './components/resources';
 /* import PatientDB from './components/patientdb';*/
 
-const history = require('history').createBrowserHistory;
+const history = require("history").createBrowserHistory;
 
 function App() {
   const pages = [
     {
-      pageLink: '/',
+      pageLink: "/",
       view: Home,
-      displayName: 'Home',
+      displayName: "Home",
       animationDelayForNavbar: 0.2,
     },
     // {
@@ -37,27 +37,27 @@ function App() {
     //   animationDelayForNavbar: 0.3,
     // },
     {
-      pageLink: '/govtAdvisory',
+      pageLink: "/govtAdvisory",
       view: GovtAdvisory,
-      displayName: 'Governments Advisory',
+      displayName: "Governments Advisory",
       animationDelayForNavbar: 0.3,
     },
     {
-      pageLink: '/deepdive',
+      pageLink: "/deepdive",
       view: DeepDive,
-      displayName: 'Deep Dive',
+      displayName: "Deep Dive",
       animationDelayForNavbar: 0.4,
     },
     {
-      pageLink: '/links',
+      pageLink: "/links",
       view: Links,
-      displayName: 'Helpful Links',
+      displayName: "Helpful Links",
       animationDelayForNavbar: 0.4,
     },
     {
-      pageLink: '/faq',
+      pageLink: "/faq",
       view: FAQ,
-      displayName: 'About',
+      displayName: "About",
       animationDelayForNavbar: 0.5,
     },
     // {
@@ -72,7 +72,7 @@ function App() {
     <div className="App">
       <Router history={history}>
         <Route
-          render={({location}) => (
+          render={({ location }) => (
             <div className="Almighty-Router">
               <Navbar pages={pages} />
               <Banner />
@@ -95,7 +95,7 @@ function App() {
         />
       </Router>
 
-      <footer className="fadeInUp" style={{animationDelay: '2s'}}>
+      <footer className="fadeInUp" style={{ animationDelay: "2s" }}>
         {/* <img
           src="/icon.png"
           alt="https://www.covid19india.org | Coronavirus cases live dashboard"
@@ -104,7 +104,7 @@ function App() {
         <h5>We stand with everyone fighting on the frontlines</h5>
         <div className="link">
           <a
-            href="https://github.com/covid19india"
+            href="https://github.com/ramavadhmaurya/covid19indiantraker"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -114,7 +114,7 @@ function App() {
         </div>
 
         <a
-          href="https://github.com/covid19india/covid19india-react"
+          href="https://github.com/ramavadhmaurya/covid19indiantraker"
           className="button github"
           target="_blank"
           rel="noopener noreferrer"
@@ -123,7 +123,7 @@ function App() {
           <span>Open Sourced on GitHub</span>
         </a>
 
-        <a
+        {/* <a
           href="https://github.com/covid19india/covid19india-react"
           className="button github"
           target="_blank"
@@ -131,7 +131,7 @@ function App() {
         >
           <Icon.GitHub />
           <span>Parent Refrence Open Sourced on GitHub</span>
-        </a>
+        </a> */}
 
         <a
           className="button excel"
@@ -140,26 +140,26 @@ function App() {
           rel="noopener noreferrer"
         >
           <Icon.Database />
-          <span>Parent Refrence Crowdsourced Patient Database&nbsp;</span>
+          <span>Refrence Crowdsourced Patient Database&nbsp;</span>
         </a>
         <a
           href="https://twitter.com/AvadhMaurya"
           target="_blank"
           rel="noopener noreferrer"
           className="button twitter"
-          style={{justifyContent: 'center'}}
+          style={{ justifyContent: "center" }}
         >
           <Icon.Twitter />
           <span>Connect me on Twitter</span>
         </a>
         <a
           href="https://linkedin.com/in/ramavadhmaurya"
-          className="button telegram"
+          className="button linkedIn"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon.MessageCircle />
-          <span>Join me on LinkedIn to Collaborate and Contribute!</span>
+          <Icon.Linkedin />
+          <span> Join me on LinkedIn to Collaborate and Contribute!</span>
         </a>
       </footer>
     </div>

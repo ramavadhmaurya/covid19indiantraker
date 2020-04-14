@@ -1,22 +1,24 @@
 # covid19india
 
 <p align="center">
-<img src="https://lh3.googleusercontent.com/c1R9ua5XDaInXNNYEVKs5NzwQ36gYCXi1VJ5kLRxGcDYmyUSJM3dnkzqaPWP_CniaHQbQSr4yQqxmsoEGvGFrWFnBRAVjI4=s2560" width="50%">
+<img src="https://lh3.googleusercontent.com/c1R9ua5XDaInXNNYEVKs5NzwQ36gYCXi1VJ5kLRxGcDYmyUSJM3dnkzqaPWP_CniaHQbQSr4yQqxmsoEGvGFrWFnBRAVjI4=s2560" width="60%">
 </p>
 
 <p align="center">
-  View our <a href="https://bit.ly/patientdb">live patient database</a>.
+  View our Parent Refrence <a href="https://bit.ly/patientdb">live patient database</a>.
  </p>
 
-## Setup
+## For your Local Setup
 
 ```
-npm i && npm start
+1. git clone https://github.com/ramavadhmaurya/covid19indiantraker.git
+2. npm install
+3. npm start
 ```
 
 ## Maintainers
 
-- [jeremyphilemon](https://github.com/jeremyphilemon)
+- [ramavadhmaurya](https://github.com/ramavadhmaurya)
 
 ## Contribution
 
